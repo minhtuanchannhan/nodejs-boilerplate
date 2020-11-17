@@ -10,7 +10,7 @@
     "dev": "nodemon ./app --inspect",
     "lint": "eslint ./**/*.js",
     "lint:fix": "eslint ./**/*.js --fix",
-    "test": "mocha ./test/**/*.js"
+    "test": "nyc mocha --timeout=10000 --exit ./tests/**/*.js"
   },
   "husky": {
     "hooks": {
